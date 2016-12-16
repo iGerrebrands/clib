@@ -1,12 +1,12 @@
 {
-  "name": "maze",
-  "version": "1.0.0",
+  "name": "clib",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server"
   },
-  "author": "",
+  "author": "Ian Gerrebrands",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.18.2",

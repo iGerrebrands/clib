@@ -11,7 +11,7 @@ export default class Image extends IShape{
      */
     constructor (img, pos, size) {
         super();
-        this.img = document.createElement('img');
+        this.img = new window.Image();
         this.img.src = img;
         this.pos = pos;
         this.size = size;

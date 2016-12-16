@@ -1,5 +1,7 @@
 import clib from "./canvas/clib";
 
+import image from './resources/images/test.png';
+
 clib.createCanvas(new clib.Vector2D(500, 500), '.canvas', 50);
 
 class myRect extends clib.Rectangle {
@@ -22,12 +24,17 @@ class myRect extends clib.Rectangle {
     }
 }
 
-clib.canvas.addObject(new myRect(new clib.Vector2D(0, 0), new clib.Vector2D(80, 40), '#0022fe', true));
-clib.canvas.addObject(new myRect(new clib.Vector2D(90, 0), new clib.Vector2D(80, 40), '#0022fe', true));
-clib.canvas.addObject(new myRect(new clib.Vector2D(180, 0), new clib.Vector2D(80, 40), '#ff010f', true));
-clib.canvas.addObject(new myRect(new clib.Vector2D(270, 0), new clib.Vector2D(80, 40), '#0022fe', true));
-clib.canvas.addObject(new myRect(new clib.Vector2D(360, 0), new clib.Vector2D(80, 40), '#0022fe', true));
+// clib.canvas.addObject(new myRect(new clib.Vector2D(0, 0), new clib.Vector2D(80, 40), '#0022fe', true));
+// clib.canvas.addObject(new myRect(new clib.Vector2D(90, 0), new clib.Vector2D(80, 40), '#0022fe', true));
+// clib.canvas.addObject(new myRect(new clib.Vector2D(180, 0), new clib.Vector2D(80, 40), '#ff010f', true));
+// clib.canvas.addObject(new myRect(new clib.Vector2D(270, 0), new clib.Vector2D(80, 40), '#0022fe', true));
+// clib.canvas.addObject(new myRect(new clib.Vector2D(360, 0), new clib.Vector2D(80, 40), '#0022fe', true));
+
+let img = new clib.Image(image, new clib.Vector2D(0, 0), new clib.Vector2D(80, 50));
+
+clib.canvas.addObject(img);
 
 clib.setUpdateLoop(() => {
+
 }, 50);
 

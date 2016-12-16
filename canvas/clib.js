@@ -2,6 +2,7 @@ import './prototype/Object';
 import Vector2D from './vector/Vector2D';
 import Canvas from './Canvas';
 import Rectangle from './shapes/Rectangle';
+import Image from './shapes/Image';
 import AnimationFrame from './loops/AnimationFrame';
 import BaseAnimationFrame from './loops/BaseAnimationFrame';
 
@@ -10,6 +11,7 @@ export default {
     Canvas: Canvas,
     canvas: null,
     Rectangle: Rectangle,
+    Image: Image,
     animationFrame: null,
     /**
      * @param {Vector2D} size

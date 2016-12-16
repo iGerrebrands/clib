@@ -11,6 +11,6 @@ export default class IShape {
     }
 
     update() {
-        throw new NotImplementedError('The function `IShape::update` has not been implemented.');
+        //throw new NotImplementedError('The function `IShape::update` has not been implemented.');
     }
 }

@@ -1,8 +1,9 @@
 import NotImplementedError from '../Error/NotImplementedError';
 
 export default class IShape {
-    constructor () {
+    constructor (layer) {
         this.id = -1;
+        this.layer = layer;
     }
 
     /** {Canvas} canvas **/

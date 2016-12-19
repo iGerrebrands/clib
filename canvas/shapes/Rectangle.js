@@ -8,8 +8,8 @@ export default class Rectangle extends IShape{
      * @param {string} color
      * @param {boolean} filled
      */
-    constructor(posVector, sizeVector, color, filled) {
-        super();
+    constructor(posVector, sizeVector, color, filled, layer) {
+        super(layer);
         this.pos = posVector;
         this.sizeVector = sizeVector;
         this.color = color;

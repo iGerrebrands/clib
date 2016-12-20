@@ -8,10 +8,10 @@ export default class Square extends Rectangle {
      * @param {number} size
      * @param {string} color
      * @param {boolean} filled
-     * @param {number} layer
+     * @param {number} layerIndex
      */
-    constructor(posVector, size, color, filled, layer) {
-        super(posVector, new Vector2D(size, size), color, filled, layer);
+    constructor(posVector, size, color, filled, layerIndex) {
+        super(posVector, new Vector2D(size, size), color, filled, layerIndex);
     }
 
 }

@@ -26,7 +26,7 @@ export default class Canvas {
         object.id = this.objects.length;
         this.objects.push(object);
         this.objects = this.objects.sort((a, b) => {
-            return a.layer - b.layer;
+            return a.layerIndex - b.layerIndex;
         });
         return object;
     }

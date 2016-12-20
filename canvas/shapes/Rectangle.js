@@ -7,10 +7,10 @@ export default class Rectangle extends IShape{
      * @param {Vector2D} sizeVector
      * @param {string} color
      * @param {boolean} filled
-     * @param {number} layer
+     * @param {number} layerIndex
      */
-    constructor(posVector, sizeVector, color, filled, layer) {
-        super(layer);
+    constructor(posVector, sizeVector, color, filled, layerIndex) {
+        super(layerIndex);
         this.pos = posVector;
         this.sizeVector = sizeVector;
         this.color = color;

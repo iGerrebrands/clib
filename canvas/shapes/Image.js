@@ -8,9 +8,10 @@ export default class Image extends IShape{
      * @param img
      * @param {Vector2D} pos
      * @param {Vector2D} size
+     * @param {number} layerIndex
      */
-    constructor (img, pos, size) {
-        super();
+    constructor (img, pos, size, layerIndex) {
+        super(layerIndex);
         this.img = new window.Image();
         this.img.src = img;
         this.pos = pos;

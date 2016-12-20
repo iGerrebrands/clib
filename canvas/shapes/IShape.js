@@ -1,8 +1,10 @@
-import NotImplementedError from '../Error/NotImplementedError';
+import NotImplementedError from '../error/NotImplementedError';
 
 export default class IShape {
-    constructor () {
+    /** @param {number} layerIndex **/
+    constructor (layerIndex) {
         this.id = -1;
+        this.layerIndex = layerIndex;
     }
 
     /** {Canvas} canvas **/

@@ -2,6 +2,7 @@ import './prototype/Object';
 import Vector2D from './vector/Vector2D';
 import Canvas from './Canvas';
 import Rectangle from './shapes/Rectangle';
+import Square from './Shapes/Square';
 import Image from './shapes/Image';
 import AnimationFrame from './loops/AnimationFrame';
 import BaseAnimationFrame from './loops/BaseAnimationFrame';
@@ -11,6 +12,7 @@ export default {
     Canvas: Canvas,
     canvas: null,
     Rectangle: Rectangle,
+    Square: Square,
     Image: Image,
     animationFrame: null,
     /**

@@ -8,6 +8,7 @@ export default class Image extends IShape{
      * @param img
      * @param {Vector2D} pos
      * @param {Vector2D} size
+     * @param {number} layer
      */
     constructor (img, pos, size, layer) {
         super(layer);

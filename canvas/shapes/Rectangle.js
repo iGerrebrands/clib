@@ -7,6 +7,7 @@ export default class Rectangle extends IShape{
      * @param {Vector2D} sizeVector
      * @param {string} color
      * @param {boolean} filled
+     * @param {number} layer
      */
     constructor(posVector, sizeVector, color, filled, layer) {
         super(layer);

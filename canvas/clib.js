@@ -2,7 +2,7 @@ import './prototype/Object';
 import Vector2D from './vector/Vector2D';
 import Canvas from './Canvas';
 import Rectangle from './shapes/Rectangle';
-import Square from './Shapes/Square';
+import Square from './shapes/Square';
 import Image from './shapes/Image';
 import AnimationFrame from './loops/AnimationFrame';
 import BaseAnimationFrame from './loops/BaseAnimationFrame';

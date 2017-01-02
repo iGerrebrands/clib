@@ -1,18 +1,21 @@
 import clib from "./canvas/clib";
 
-import image from './resources/images/test.png';
-
 clib.createCanvas(new clib.Vector2D(500, 500), '.canvas', 50);
 
-let iObject = clib.canvas.addObject(new clib.Image(image, new clib.Vector2D(5, 12), new clib.Vector2D(80, 50), 1));
-let iSquare = clib.canvas.addObject(new clib.Square(new clib.Vector2D(0,0), 80, '#81ff00', true, 0));
+let iSquare = clib.canvas.addObject(new clib.Square(new clib.Vector2D(0,0), 20, '#81ff00', true, 0));
+let bool = false;
+
 
 clib.setUpdateLoop(() => {
 
-    iObject.size.x++;
-    iObject.size.y++;
 
-    iSquare.size.x++;
-    iSquare.size.y++;
+
+    if(!bool) {
+        bool = iSquare.size.increaseWithLimit(new clib.Vector2D(5, 2), new clib.Vector2D(200, 200));
+    } else {
+        bool = !iSquare.size.decreaseWithLimit(new clib.Vector2D(3, 8), new clib.Vector2D(20, 20));
+    }
+
+
 
 }, 50);

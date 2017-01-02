@@ -1,7 +1,5 @@
 /node_modules
 /.idea
-/resources
 
 index.js
-main.js
 npm-debug.log.*

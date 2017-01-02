@@ -12,7 +12,7 @@ export default class Rectangle extends IShape{
     constructor(posVector, sizeVector, color, filled, layerIndex) {
         super(layerIndex);
         this.pos = posVector;
-        this.sizeVector = sizeVector;
+        this.size = sizeVector;
         this.color = color;
         this.filled = filled;
     }
@@ -21,10 +21,10 @@ export default class Rectangle extends IShape{
     draw(canvas) {
         if(this.filled) {
             canvas.pen.fillStyle = this.color;
-            canvas.pen.fillRect(this.pos.x, this.pos.y, this.sizeVector.x, this.sizeVector.y);
+            canvas.pen.fillRect(this.pos.x, this.pos.y, this.size.x, this.size.y);
         } else {
             canvas.pen.strokeStyle = this.color;
-            canvas.pen.strokeRect(this.pos.x, this.pos.y, this.sizeVector.x, this.sizeVector.y);
+            canvas.pen.strokeRect(this.pos.x, this.pos.y, this.size.x, this.size.y);
         }
     }
 

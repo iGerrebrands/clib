@@ -1,21 +1,17 @@
-import IShape from './IShape';
+import Rectangle from './Rectangle';
 
-//TODO: Test images loader
-
-export default class Image extends IShape{
+export default class Image extends Rectangle{
 
     /**
      * @param img
-     * @param {Vector2D} pos
-     * @param {Vector2D} size
+     * @param {Vector2D} posVector
+     * @param {Vector2D} sizeVector
      * @param {number} layerIndex
      */
-    constructor (img, pos, size, layerIndex) {
-        super(layerIndex);
+    constructor (img, posVector, sizeVector, layerIndex) {
+        super(posVector, sizeVector, null, null, layerIndex);
         this.img = new window.Image();
         this.img.src = img;
-        this.pos = pos;
-        this.size = size;
     }
 
     /** @param {Canvas} canvas **/

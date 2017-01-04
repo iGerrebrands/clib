@@ -32,7 +32,8 @@ export default {
     setUpdateLoop: function (update, fps) {
         let _this = this;
         let updateMethod = function () {
-            _this.canvas.objects.forEach((obj) => {
+            let updateList =  _this.canvas.objects.slice();
+            updateList.forEach((obj) => {
                 obj.update();
             });
             update();
